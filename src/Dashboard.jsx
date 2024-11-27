@@ -1,42 +1,74 @@
 import React from "react";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
 
 const Dashboard = () => {
   return (
-    <div className="wrapper">
-      <Header />
-      <Sidebar />
-      <div className="content-wrapper">
-        <div className="content-header">
-          <div className="container-fluid">
-            <div className="row mb-2">
-              <div className="col-sm-6">
-                <h1 className="m-0">Dashboard</h1>
-              </div>
+    <div className="content-wrapper">
+      {/* Content Header */}
+      <section className="content-header">
+        <div className="container-fluid">
+          <div className="row mb-2">
+            <div className="col-sm-6">
+              <h1>Dashboard</h1>
             </div>
           </div>
         </div>
+      </section>
 
-        <section className="content">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="card">
-                  <div className="card-header">
-                    <h3 className="card-title">Welcome!</h3>
-                  </div>
-                  <div className="card-body">
-                    Content here...
-                  </div>
+      {/* Main Content */}
+      <section className="content">
+        <div className="container-fluid">
+          <div className="row">
+            {/* Card for Kelas */}
+            <div className="col-lg-3 col-6">
+              <div className="small-box bg-info">
+                <div className="inner">
+                  <h3>0</h3>
+                  <p>Kelas</p>
+                </div>
+                <div className="icon">
+                  <i className="fas fa-school"></i>
+                </div>
+              </div>
+            </div>
+            {/* Card for Siswa */}
+            <div className="col-lg-3 col-6">
+              <div className="small-box bg-success">
+                <div className="inner">
+                  <h3>0</h3>
+                  <p>Siswa</p>
+                </div>
+                <div className="icon">
+                  <i className="fas fa-users"></i>
+                </div>
+              </div>
+            </div>
+            {/* Card for Ujian */}
+            <div className="col-lg-3 col-6">
+              <div className="small-box bg-warning">
+                <div className="inner">
+                  <h3>0</h3>
+                  <p>Ujian</p>
+                </div>
+                <div className="icon">
+                  <i className="fas fa-edit"></i>
+                </div>
+              </div>
+            </div>
+            {/* Card for Sesi Ujian */}
+            <div className="col-lg-3 col-6">
+              <div className="small-box bg-danger">
+                <div className="inner">
+                  <h3>0</h3>
+                  <p>Sesi Ujian</p>
+                </div>
+                <div className="icon">
+                  <i className="fas fa-clock"></i>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-      <Footer />
+        </div>
+      </section>
     </div>
   );
 };

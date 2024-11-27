@@ -1,11 +1,17 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import "./index.css";
-// import Dashboard from "./Dashboard";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./Dashboard.jsx";
+import MataPelajaran from "./MataPelajaran.jsx";
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <Dashboard />
-//   </React.StrictMode>,
-//   document.getElementById("root")
-// );
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/mata-pelajaran" element={<MataPelajaran />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;

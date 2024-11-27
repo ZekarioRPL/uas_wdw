@@ -1,18 +1,17 @@
-import React from "react";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
-// import Dashboard from "./components/Dashboard";
+// import React from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Dashboard from "./Dashboard.jsx";
+// import MataPelajaran from "./MataPelajaran.jsx";
 
-const App = () => {
-  return (
-    <div className="wrapper">
-      <Header />
-      <Sidebar />
-      {/* <Dashboard /> */}
-      <Footer />
-    </div>
-  );
-};
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Dashboard />} />
+//         <Route path="/mata-pelajaran" element={<MataPelajaran />} />
+//       </Routes>
+//     </Router>
+//   );
+// };
 
-export default App;
+// export default App;
